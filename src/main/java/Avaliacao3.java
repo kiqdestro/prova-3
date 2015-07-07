@@ -16,7 +16,6 @@ public class Avaliacao3 {
     
     static int conta;
     static List<Lancamento> listlancamento = new ArrayList<>();
-    static int kiq = 0;
  
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
