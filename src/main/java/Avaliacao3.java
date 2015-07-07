@@ -16,6 +16,7 @@ public class Avaliacao3 {
     
     static int conta;
     static List<Lancamento> listlancamento = new ArrayList<>();
+    static int kiq = 0;
  
     public static void main(String[] args) throws FileNotFoundException, IOException {
         
@@ -29,17 +30,19 @@ public class Avaliacao3 {
         listlancamento = processor.getLancamentos();
         
         System.out.println("Conta");
-        
+            
         while(scanner.hasNextInt()){
+            
             conta = scanner.nextInt();
+            
             if(conta != 0){
                 Avaliacao3.exibeLancamentosConta(listlancamento, conta);
             }
+            
             else{
                 System.exit(0);
+                }
             }
-        }
-
     }
     
     public static void exibeLancamentosConta(List<Lancamento> lancamentos, Integer conta) {
